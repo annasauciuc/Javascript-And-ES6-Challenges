@@ -9,7 +9,14 @@ Use ES6 whenever possible.
 "use strict";
 
 // Write code here
-function sum() {}
+function sum(...arr) {
+    let result = 0;
+    result = arr.reduce((acc, elem) => acc + elem)
+    console.log('result :', result);
+}
+
+
+
 sum(1, 3);
 //4
 
