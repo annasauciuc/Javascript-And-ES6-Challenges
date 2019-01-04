@@ -10,11 +10,17 @@ Car is considered expensive it it's price is > 20000
 "use strict";
 
 var cars = [
-  { brand: "Honda", price: 13000 },
-  { brand: "Rolls-Royce", price: 120000 }
+    { brand: "Honda", price: 13000 },
+    { brand: "Rolls-Royce", price: 120000 }
 ];
 
 // Write carInfo() function here
+function carInfo(cars) {
+    let value;;
+    return `Price of my new ${cars.brand} \ 
+    is ${cars.price}$ and it is a ${cars.price <= 20000 ? "cheap" : "expensive"} car. `
+
+}
 
 cars.forEach(car => console.log(carInfo(car)));
 /* Price of my new Honda is 13000$
