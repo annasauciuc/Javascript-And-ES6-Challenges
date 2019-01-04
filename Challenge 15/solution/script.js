@@ -8,10 +8,11 @@ Vowel letters - a, e, i, o, u
 
 var vowelsCount = 0;
 var vowels = ["a", "e", "i", "o", "u"];
-
 var str = "Today is best day of my life";
 
-// Write code here
+for (let element of str) {
+    if (vowels.includes(element)) vowelsCount++;
 
+}
 console.log(vowelsCount);
 // 8
