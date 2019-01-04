@@ -9,7 +9,7 @@ using destructuring and rest operator.
 var a, b, c;
 
 var arr = [1, 2, 3, 4, 5, 6, 7];
-var [a, b, ...c] = arr;
+[a, b, ...c] = arr;
 // Write code here
 
 console.log(a);
